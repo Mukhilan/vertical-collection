@@ -205,6 +205,7 @@ const VerticalCollection = Component.extend({
     this.schedule('sync', () => {
       this._radar.start();
     });
+    this.sendAction('didCompInit');
   },
 
   willDestroy() {
